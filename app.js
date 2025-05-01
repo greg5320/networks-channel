@@ -13,7 +13,7 @@ const CHANNEL_PORT = parseInt(process.env.CHANNEL_PORT, 10);
 const app = express();
 app.use(bodyParser.json());
 
-app.post('/segments/code', async (req, res) => {
+app.post('/segment', async (req, res) => {
   const segment = req.body;
   try {
     if (Math.random() < P_LOSS) {
