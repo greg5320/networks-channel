@@ -5,7 +5,7 @@ const axios = require('axios');
 const { TextEncoder, TextDecoder } = require('util');
 const { Hamming } = require('./ham');
 
-const P_ERROR = 0.8;
+const P_ERROR = 0.1;
 const P_LOSS = 0.02;
 const TRANSPORT_URL = process.env.TRANSPORT_URL;
 const CHANNEL_PORT = parseInt(process.env.CHANNEL_PORT, 10);
